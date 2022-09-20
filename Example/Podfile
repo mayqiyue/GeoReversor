@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GeoReversor_Example' do
+  pod 'GeoReversor', :path => '../'
+
+  target 'GeoReversor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
