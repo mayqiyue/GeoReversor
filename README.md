@@ -22,7 +22,7 @@ pod 'GeoReversor'
 
 ## Author
 
-mayqiyue, flaot@funmobig.com
+mayqiyue, xu20121013@gmail.com
 
 ## License
 
