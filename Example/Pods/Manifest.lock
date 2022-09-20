@@ -1,0 +1,16 @@
+PODS:
+  - GeoReversor (0.1.0)
+
+DEPENDENCIES:
+  - GeoReversor (from `../`)
+
+EXTERNAL SOURCES:
+  GeoReversor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GeoReversor: 58febe55c30e165934b993f09e6281248c7c052f
+
+PODFILE CHECKSUM: 7853e631be34122629e0bca32318c617d7fdef71
+
+COCOAPODS: 1.11.3

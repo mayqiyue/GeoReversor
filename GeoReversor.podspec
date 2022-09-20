@@ -24,17 +24,17 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/mayqiyue/GeoReversor'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mayqiyue' => 'flaot@funmobig.com' }
+  s.author           = { 'mayqiyue' => 'xu20121013@gmail.com' }
   s.source           = { :git => 'https://github.com/mayqiyue/GeoReversor.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'GeoReversor/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'GeoReversor' => ['GeoReversor/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'GeoReversor' => ['GeoReversor/Assets/*.txt']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
