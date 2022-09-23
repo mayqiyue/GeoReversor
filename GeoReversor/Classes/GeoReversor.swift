@@ -9,42 +9,43 @@ import Foundation
 import Zip
 
 public class GeoReversor: NSObject {
-    private var _locations: [GeoLocation]?
+    public private(set) var _locationsMap: [String: GeoLocation]?
     private var _tree: KDTree<GeoLocation>?
 
     /// Search for closest k known locations to these coordinates
     /// point: (latitude, longitude)
     public func search(_ point: (Double, Double), k: Int = 1) -> [GeoLocation] {
         let (longitude, latitude) = point
-        var locations: [GeoLocation]! = _locations
+        var locationsMap: [String: GeoLocation]! = _locationsMap
         var tree: KDTree<GeoLocation>! = _tree
 
-        if locations == nil {
-            _locations = extractGeoData()
-            locations = _locations
+        if locationsMap == nil {
+            _locationsMap = extractGeoData()
+            locationsMap = _locationsMap
         }
         if tree == nil {
-            _tree = KDTree(values: locations)
+            _tree = KDTree(values: Array(locationsMap.values))
             tree = _tree
         }
-        let targets = tree.nearestK(k, to: .init(name: "", alternatenames: [""], latitude: longitude, longitude: latitude, contryCode: "", contry: ""))
+        let targets = tree.nearestK(k, to: .init(id: "", name: "", alternatenames: [""], latitude: longitude, longitude: latitude, contryCode: "", contry: ""))
         return targets
     }
 
-    private func extractGeoData() -> [GeoLocation] {
+    private func extractGeoData() -> [String: GeoLocation] {
+        var cities: [String: GeoLocation] = [:]
+
         guard let cityFileURL = unzipFile(name: "cities5000", ext: "txt") else {
-            return []
+            return cities
         }
         guard let geoString = try? String(contentsOf: cityFileURL, encoding: .utf8) else {
-            return []
+            return cities
         }
         let countryMap = extractCountryData()
-        var cities: [GeoLocation] = []
 
         for row in geoString.components(separatedBy: "\n").dropLast(1) { // drop last empty line
             let columns = row.components(separatedBy: "\t")
-            let city = GeoLocation(name: columns[1], alternatenames: columns[2].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, contryCode: columns[8], contry: countryMap[columns[8]])
-            cities.append(city)
+            let city = GeoLocation(id: columns[0], name: columns[1], alternatenames: columns[3].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, contryCode: columns[8], contry: countryMap[columns[8]])
+            cities[columns[0]] = city
         }
         return cities
     }

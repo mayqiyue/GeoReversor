@@ -6,14 +6,31 @@
 //
 
 import Foundation
+import NaturalLanguage
 
 public struct GeoLocation {
+    public let id: String
     public let name: String
     public let alternatenames: [String]
     public let latitude: Double
     public let longitude: Double
     public let contryCode: String
     public let contry: String?
+}
+
+extension GeoLocation {
+    /// code: country code, default is device's current language code
+    public func localizedName(_ code: String = "en") -> String {
+        let recognizer = NLLanguageRecognizer()
+        for string in alternatenames {
+            recognizer.processString(string)
+            print("xxxx recognizer is \(recognizer.dominantLanguage?.rawValue)")
+            if let languageCode = recognizer.dominantLanguage?.rawValue, languageCode == code {
+                return string
+            }
+        }
+        return name
+    }
 }
 
 extension GeoLocation: KDTreePoint {

@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "11.0"
+    "ios": "12.0"
   },
   "source_files": "GeoReversor/Classes/**/*",
   "resource_bundles": {
@@ -25,6 +25,7 @@
       "GeoReversor/Assets/*.zip"
     ]
   },
+  "frameworks": "NaturalLanguage",
   "dependencies": {
     "Zip": [
       "~> 2.1"
