@@ -1,15 +1,22 @@
 PODS:
-  - GeoReversor (0.1.0)
+  - GeoReversor (0.1.0):
+    - Zip (~> 2.1)
+  - Zip (2.1.2)
 
 DEPENDENCIES:
   - GeoReversor (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Zip
 
 EXTERNAL SOURCES:
   GeoReversor:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GeoReversor: 58febe55c30e165934b993f09e6281248c7c052f
+  GeoReversor: 21b8a99e5c2cd617e0a3151fdde688a3613e5889
+  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
 PODFILE CHECKSUM: 7853e631be34122629e0bca32318c617d7fdef71
 

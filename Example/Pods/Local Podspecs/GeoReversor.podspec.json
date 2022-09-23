@@ -21,7 +21,13 @@
   "source_files": "GeoReversor/Classes/**/*",
   "resource_bundles": {
     "GeoReversor": [
-      "GeoReversor/Assets/*.txt"
+      "GeoReversor/Assets/*.txt",
+      "GeoReversor/Assets/*.zip"
+    ]
+  },
+  "dependencies": {
+    "Zip": [
+      "~> 2.1"
     ]
   }
 }

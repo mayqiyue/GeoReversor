@@ -33,10 +33,10 @@ TODO: Add long description of the pod here.
   s.source_files = 'GeoReversor/Classes/**/*'
   
    s.resource_bundles = {
-     'GeoReversor' => ['GeoReversor/Assets/*.txt']
+     'GeoReversor' => ['GeoReversor/Assets/*.txt','GeoReversor/Assets/*.zip']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Zip', '~> 2.1'
 end

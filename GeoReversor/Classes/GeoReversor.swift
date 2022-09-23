@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Zip
 
 public class GeoReversor: NSObject {
     private var _locations: [GeoLocation]?
@@ -31,7 +32,10 @@ public class GeoReversor: NSObject {
     }
 
     private func extractGeoData() -> [GeoLocation] {
-        guard let geoString = bundleString("cities5000", ext: "txt") else {
+        guard let cityFileURL = unzipFile(name: "cities5000", ext: "txt") else {
+            return []
+        }
+        guard let geoString = try? String(contentsOf: cityFileURL, encoding: .utf8) else {
             return []
         }
         let countryMap = extractCountryData()
@@ -46,7 +50,10 @@ public class GeoReversor: NSObject {
     }
 
     private func extractCountryData() -> [String: String] {
-        guard let string = bundleString("countries", ext: "txt") else {
+        guard let countryFileURL = contentBundle.url(forResource: "countries", withExtension: "txt") else {
+            return [:]
+        }
+        guard let string = try? String(contentsOf: countryFileURL, encoding: .utf8) else {
             return [:]
         }
 
@@ -60,18 +67,21 @@ public class GeoReversor: NSObject {
         return map
     }
 
-    private func bundleString(_ name: String, ext: String) -> String? {
-        let bundle = Bundle(for: Self.self)
-        var url = bundle.url(forResource: name, withExtension: ext)
-        if url == nil {
-            url = bundle.bundleURL.appendingPathComponent("GeoReversor.bundle").appendingPathComponent("\(name).\(ext)")
-        }
-        guard let url = url else {
+    private func unzipFile(name: String, ext: String) -> URL? {
+        guard let filePath = contentBundle.url(forResource: name, withExtension: "zip") else {
             return nil
         }
-        guard let string = try? String(contentsOf: url, encoding: .utf8) else {
+        guard let unzipDirectory = try? Zip.quickUnzipFile(filePath) else {
             return nil
         }
-        return string
+        return unzipDirectory.appendingPathComponent("\(name).\(ext)")
     }
+
+    private lazy var contentBundle: Bundle = {
+        let mainBundle = Bundle(for: Self.self)
+        if let resourceBundle = Bundle(url: mainBundle.bundleURL.appendingPathComponent("GeoReversor.bundle")) {
+            return resourceBundle
+        }
+        return mainBundle
+    }()
 }
