@@ -20,11 +20,10 @@ public struct GeoLocation {
 
 extension GeoLocation {
     /// code: country code, default is device's current language code
-    public func localizedName(_ code: String = "en") -> String {
+    public func localizedName(_ code: String = Locale.preferredLanguageCode) -> String {
         let recognizer = NLLanguageRecognizer()
         for string in alternatenames {
             recognizer.processString(string)
-            print("xxxx recognizer is \(recognizer.dominantLanguage?.rawValue)")
             if let languageCode = recognizer.dominantLanguage?.rawValue, languageCode == code {
                 return string
             }
@@ -68,5 +67,18 @@ private extension Double {
     func roundToPlaces(_ places: Int) -> Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
+    }
+}
+
+extension Locale {
+    /// Remove region code
+    /// zh-Hans-US -> zh-Hans
+    public static var preferredLanguageCode: String {
+        let full = preferredLanguages[0]
+        let array = full.components(separatedBy: "-")
+        if array.count >= 2 {
+            return Array(array.dropLast(1)).joined(separator: "-")
+        }
+        return full
     }
 }

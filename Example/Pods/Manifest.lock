@@ -1,5 +1,5 @@
 PODS:
-  - GeoReversor (0.1.0):
+  - GeoReversor (0.3.0):
     - Zip (~> 2.1)
   - Zip (2.1.2)
 
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GeoReversor: 9615625a00a89547e7d5fc1ea05598a2833c332f
+  GeoReversor: cf867b18d1293a933fce94b6260ea71a5b2201b8
   Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 7853e631be34122629e0bca32318c617d7fdef71
+PODFILE CHECKSUM: 4c9dfbb6ad6e8ded378df450226c89f9ba5cd996
 
 COCOAPODS: 1.11.3
