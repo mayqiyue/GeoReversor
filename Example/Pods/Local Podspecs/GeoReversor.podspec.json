@@ -27,8 +27,8 @@
   },
   "frameworks": "NaturalLanguage",
   "dependencies": {
-    "Zip": [
-      "~> 2.1"
+    "SSZipArchive": [
+
     ]
   }
 }

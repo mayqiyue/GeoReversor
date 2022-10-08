@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Zip
+import SSZipArchive
 
 public class GeoReversor: NSObject {
     public private(set) var _locationsMap: [String: GeoLocation]?
@@ -69,15 +69,25 @@ public class GeoReversor: NSObject {
     }
 
     private func unzipFile(name: String, ext: String) -> URL? {
-        guard let filePath = contentBundle.url(forResource: name, withExtension: "zip") else {
+        guard let filePath = contentBundle.url(forResource: name, withExtension: "zip")?.path else {
             return nil
         }
-        guard let unzipDirectory = try? Zip.quickUnzipFile(filePath) else {
+        let destURL = getDocumentsDirectory().appendingPathComponent(name)
+        if FileManager.default.fileExists(atPath: destURL.path) {
+            try? FileManager.default.removeItem(at: destURL)
+        }
+        guard true == SSZipArchive.unzipFile(atPath: filePath, toDestination: destURL.path) else {
             return nil
         }
-        return unzipDirectory.appendingPathComponent("\(name).\(ext)")
+        return destURL.appendingPathComponent("\(name).\(ext)")
     }
 
+    private func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
     private lazy var contentBundle: Bundle = {
         let mainBundle = Bundle(for: Self.self)
         if let resourceBundle = Bundle(url: mainBundle.bundleURL.appendingPathComponent("GeoReversor.bundle")) {

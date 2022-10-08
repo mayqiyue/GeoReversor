@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F834CFDC9C164BA5F7D5B0B /* Pods_GeoReversor_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4570ED26E2EA313CA82B6421 /* Pods_GeoReversor_Example.framework */; };
+		16C15AB9B9CDE73A7DA3C402 /* libPods-GeoReversor_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4EF1AFE56FD77B34A8D67B /* libPods-GeoReversor_Example.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -19,7 +19,6 @@
 		0D50BF39E1B103DC181C95B7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0FAB5E9ED1A8F4E5B370687A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2EA36ED9361CC64DB5672325 /* Pods-GeoReversor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoReversor_Example.debug.xcconfig"; path = "Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4570ED26E2EA313CA82B6421 /* Pods_GeoReversor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoReversor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* GeoReversor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoReversor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +29,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6BD9FCD029043170F63D78AE /* Pods-GeoReversor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoReversor_Example.release.xcconfig"; path = "Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6E4EF1AFE56FD77B34A8D67B /* libPods-GeoReversor_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoReversor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		813E689DD5C3C6DB61DD1302 /* Pods-GeoReversor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoReversor_Tests.release.xcconfig"; path = "Target Support Files/Pods-GeoReversor_Tests/Pods-GeoReversor_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8EE48FB5A958EE0D4E906442 /* Pods-GeoReversor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoReversor_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GeoReversor_Tests/Pods-GeoReversor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9917B168628348918CA66232 /* Pods_GeoReversor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoReversor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F834CFDC9C164BA5F7D5B0B /* Pods_GeoReversor_Example.framework in Frameworks */,
+				16C15AB9B9CDE73A7DA3C402 /* libPods-GeoReversor_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +120,8 @@
 		7C59B80C86E933EFD9FB1947 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4570ED26E2EA313CA82B6421 /* Pods_GeoReversor_Example.framework */,
 				9917B168628348918CA66232 /* Pods_GeoReversor_Tests.framework */,
+				6E4EF1AFE56FD77B34A8D67B /* libPods-GeoReversor_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				C6F01C98E6F7752D64333F01 /* [CP] Embed Pods Frameworks */,
+				793069A90C79B42D39EA38C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,24 +230,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6F01C98E6F7752D64333F01 /* [CP] Embed Pods Frameworks */ = {
+		793069A90C79B42D39EA38C7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GeoReversor/GeoReversor.framework",
-				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GeoReversor/GeoReversor.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoReversor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GeoReversor.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoReversor_Example/Pods-GeoReversor_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

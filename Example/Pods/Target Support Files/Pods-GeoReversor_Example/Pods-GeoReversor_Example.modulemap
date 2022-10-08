@@ -1,4 +1,4 @@
-framework module Pods_GeoReversor_Example {
+module Pods_GeoReversor_Example {
   umbrella header "Pods-GeoReversor_Example-umbrella.h"
 
   export *

@@ -1,23 +1,23 @@
 PODS:
   - GeoReversor (0.3.0):
-    - Zip (~> 2.1)
-  - Zip (2.1.2)
+    - SSZipArchive
+  - SSZipArchive (2.4.3)
 
 DEPENDENCIES:
   - GeoReversor (from `../`)
 
 SPEC REPOS:
   trunk:
-    - Zip
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   GeoReversor:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GeoReversor: cf867b18d1293a933fce94b6260ea71a5b2201b8
-  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
+  GeoReversor: 8828ca14517eb83d3f1a0e3c519d60337bd792b9
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
 
-PODFILE CHECKSUM: 4c9dfbb6ad6e8ded378df450226c89f9ba5cd996
+PODFILE CHECKSUM: c7c795b878151822a07229a644f38c77ef3b60e8
 
 COCOAPODS: 1.11.3
