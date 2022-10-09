@@ -10,13 +10,15 @@ import GeoReversor
 import UIKit
 
 class ViewController: UIViewController {
+    var reversor = GeoReversor(divisionLevel: .second)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("start")
-        let reversor = GeoReversor()
+        reversor.loadData()
         let result = reversor.search((30.50633, 114.35046)).first
         print("end")
-
+        
         if let result = result {
             print("result is : \(result)")
             print("result locazlied city name is:(\(Locale.preferredLanguageCode),\(result.localizedName()))")

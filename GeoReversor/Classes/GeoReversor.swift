@@ -33,53 +33,58 @@ public class GeoReversor: NSObject {
         self.divisionLevel = divisionLevel
     }
     
-    public private(set) var _locationsMap: [String: GeoLocation]?
     private var _tree: KDTree<GeoLocation>?
-
+    
+    /// Prepare database
+    public func loadData() {
+        let locationsMap = extractGeoData()
+        _tree = KDTree(values: Array(locationsMap.values))
+    }
+    
+    public func dropData() {
+        _tree = nil
+    }
+    
     /// Search for closest k known locations to these coordinates
     /// point: (latitude, longitude)
     public func search(_ point: (Double, Double), k: Int = 1) -> [GeoLocation] {
         let (longitude, latitude) = point
-        var locationsMap: [String: GeoLocation]! = _locationsMap
         var tree: KDTree<GeoLocation>! = _tree
-
-        if locationsMap == nil {
-            _locationsMap = extractGeoData()
-            locationsMap = _locationsMap
-        }
         if tree == nil {
-            _tree = KDTree(values: Array(locationsMap.values))
-            tree = _tree
+            let locationsMap = extractGeoData()
+            tree = KDTree(values: Array(locationsMap.values))
+            _tree = tree
         }
-        let date = Date()
         let targets = tree.nearestK(k, to: .init(id: "", name: "", alternatenames: [""], latitude: longitude, longitude: latitude, featureCode: "", contryCode: "", contry: ""))
-        print("111 KDTree cost \(Date().timeIntervalSince1970 * 1000 - date.timeIntervalSince1970 * 1000) ms")
         return targets
     }
-
+    
     private func extractGeoData() -> [String: GeoLocation] {
         var cities: [String: GeoLocation] = [:]
-
+        
         guard let cityFileURL = unzipFile(name: "cities1000", ext: "txt") else {
             return cities
         }
         guard let geoString = try? String(contentsOf: cityFileURL, encoding: .utf8) else {
             return cities
         }
+        
         let countryMap = extractCountryData()
-
+        
         for row in geoString.components(separatedBy: "\n").dropLast(1) { // drop last empty line
-            let columns = row.components(separatedBy: "\t")
-            let city = GeoLocation(id: columns[0], name: columns[1], alternatenames: columns[3].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, featureCode: columns[7], contryCode: columns[8], contry: countryMap[columns[8]])
-            
-            if self.divisionLevel.codes == nil || self.divisionLevel.codes!.contains(city.featureCode) {
-                cities[columns[0]] = city
+            autoreleasepool {
+                let columns = row.components(separatedBy: "\t")
+                let featureCode = columns[7]
+                if self.divisionLevel.codes == nil || self.divisionLevel.codes!.contains(featureCode) {
+                    let city = GeoLocation(id: columns[0], name: columns[1], alternatenames: columns[3].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, featureCode: featureCode, contryCode: columns[8], contry: countryMap[columns[8]])
+                    cities[columns[0]] = city
+                }
             }
         }
-        print("xxxxx total city count is :\(cities.values.count)")
+        
         return cities
     }
-
+    
     private func extractCountryData() -> [String: String] {
         guard let countryFileURL = contentBundle.url(forResource: "countries", withExtension: "txt") else {
             return [:]
@@ -87,9 +92,9 @@ public class GeoReversor: NSObject {
         guard let string = try? String(contentsOf: countryFileURL, encoding: .utf8) else {
             return [:]
         }
-
+        
         var map: [String: String] = [:]
-
+        
         for row in string.components(separatedBy: "\n") {
             if row.isEmpty { continue }
             let columns = row.components(separatedBy: ",")
@@ -97,7 +102,7 @@ public class GeoReversor: NSObject {
         }
         return map
     }
-
+    
     private func unzipFile(name: String, ext: String) -> URL? {
         guard let filePath = contentBundle.url(forResource: name, withExtension: "zip")?.path else {
             return nil
@@ -111,7 +116,7 @@ public class GeoReversor: NSObject {
         }
         return destURL.appendingPathComponent("\(name).\(ext)")
     }
-
+    
     private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
