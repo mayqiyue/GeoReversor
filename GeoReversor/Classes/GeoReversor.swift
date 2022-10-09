@@ -1,7 +1,7 @@
 //
 //  GeoReversor.swift
 //  GeoReversor
-//
+//  数据源: https://download.geonames.org/export/dump/
 //  Created by float on 2022/9/20.
 //
 
@@ -9,6 +9,30 @@ import Foundation
 import SSZipArchive
 
 public class GeoReversor: NSObject {
+    /// 参考：http://www.geonames.org/export/codes.html
+    public enum DivisionLevel: Int {
+        case second // 市
+        case third // 区
+        case fourth // 乡镇
+        
+        var codes: [String]? {
+            switch self {
+            case .second:
+                return ["PPLC", "PPLA", "PPLA2"]
+            case .third:
+                return ["PPLC", "PPLA", "PPLA2", "PPLA3"]
+            case .fourth:
+                return nil
+            }
+        }
+    }
+    
+    public let divisionLevel: DivisionLevel
+    
+    public init(divisionLevel: DivisionLevel = .third) {
+        self.divisionLevel = divisionLevel
+    }
+    
     public private(set) var _locationsMap: [String: GeoLocation]?
     private var _tree: KDTree<GeoLocation>?
 
@@ -27,14 +51,16 @@ public class GeoReversor: NSObject {
             _tree = KDTree(values: Array(locationsMap.values))
             tree = _tree
         }
-        let targets = tree.nearestK(k, to: .init(id: "", name: "", alternatenames: [""], latitude: longitude, longitude: latitude, contryCode: "", contry: ""))
+        let date = Date()
+        let targets = tree.nearestK(k, to: .init(id: "", name: "", alternatenames: [""], latitude: longitude, longitude: latitude, featureCode: "", contryCode: "", contry: ""))
+        print("111 KDTree cost \(Date().timeIntervalSince1970 * 1000 - date.timeIntervalSince1970 * 1000) ms")
         return targets
     }
 
     private func extractGeoData() -> [String: GeoLocation] {
         var cities: [String: GeoLocation] = [:]
 
-        guard let cityFileURL = unzipFile(name: "cities5000", ext: "txt") else {
+        guard let cityFileURL = unzipFile(name: "cities1000", ext: "txt") else {
             return cities
         }
         guard let geoString = try? String(contentsOf: cityFileURL, encoding: .utf8) else {
@@ -44,9 +70,13 @@ public class GeoReversor: NSObject {
 
         for row in geoString.components(separatedBy: "\n").dropLast(1) { // drop last empty line
             let columns = row.components(separatedBy: "\t")
-            let city = GeoLocation(id: columns[0], name: columns[1], alternatenames: columns[3].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, contryCode: columns[8], contry: countryMap[columns[8]])
-            cities[columns[0]] = city
+            let city = GeoLocation(id: columns[0], name: columns[1], alternatenames: columns[3].components(separatedBy: ","), latitude: Double(columns[4])!, longitude: Double(columns[5])!, featureCode: columns[7], contryCode: columns[8], contry: countryMap[columns[8]])
+            
+            if self.divisionLevel.codes == nil || self.divisionLevel.codes!.contains(city.featureCode) {
+                cities[columns[0]] = city
+            }
         }
+        print("xxxxx total city count is :\(cities.values.count)")
         return cities
     }
 

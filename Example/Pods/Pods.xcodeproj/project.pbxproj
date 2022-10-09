@@ -7,171 +7,173 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00246558F30D48DC9E9802FDE4AD5D05 /* KDTree+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A6570A86F7242D5F5F37F670A4D4B4 /* KDTree+CustomStringConvertible.swift */; };
-		0C33A0301DF49DA6CF0207F6FA88E694 /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 747F92E53D1FF932471BCA78A7AE1E70 /* countries.txt */; };
+		00246558F30D48DC9E9802FDE4AD5D05 /* KDTree+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816C6520EC90A8DDF974A158FB27092F /* KDTree+CustomStringConvertible.swift */; };
+		02F63C7D11DA63B19FE07E9D0DFAC0C7 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 140776F73E38427DC826D566FC1E72BE /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		05291D5792AC9FB295019EE92E500499 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E1683B145EF5BCFF5482D4CD507DF88 /* mz_zip.c */; };
+		083489E7615ED6C98181CA1FA5E6BCD2 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = 992B637598E94EF7B9929AC99D658C95 /* mz_os.c */; };
 		0D1E885B71BC71E07C1DC3029A46734C /* Pods-GeoReversor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4105A52D227785F584498C9C74CE91 /* Pods-GeoReversor_Example-dummy.m */; };
-		12A3182A615D322C6592C4AC09E0D6A7 /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3FFEDA320B82FC971B0FD2DA459F92 /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		144156B3221F7B0F88E0E2922E6220C2 /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 72C645BF4E7B7ED9A6B11CC0B506EB4B /* mz_os_posix.c */; };
-		16DA93A8487D96488D05649A4C4911D7 /* KDTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF09C0018DB75F805226D83FCEFE578 /* KDTree.swift */; };
-		1D51F1D3A3A048A5B6746DD61BA998FA /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = 845CC09BE46F79E82C14446D6AB4FF9F /* mz_strm_split.c */; };
-		2C01A60689C94B12607A2BE10ECE6FD8 /* KDTree+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BFEFFF465FE77531E58D82F747C776 /* KDTree+Equatable.swift */; };
-		3B0E98F9C38BA2814431F42F0DF7D5FF /* CGPoint+KDTreePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36461E841F5465E87C8F5B3A7B9B9B32 /* CGPoint+KDTreePoint.swift */; };
-		3D558F10F51C305F4859C3B3B26C78A4 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E1683B145EF5BCFF5482D4CD507DF88 /* mz_zip.c */; };
-		3EF052F6C2D0D8D74AD62AF428773EA9 /* mz.h in Headers */ = {isa = PBXBuildFile; fileRef = 39447AE6C30B64C6A84908E6C646DE06 /* mz.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		40666A8E10CA3EA1F0A6D9282B1481B0 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = AEEA9F462777A969324BA2658C7F1127 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		49AB5CDB43492A59B94231DFA8B4544E /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B93CF1983A6E099ECD1D3602A9C717A /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		52A38843AD3A92F5F61875BF493BF408 /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = EBDAD1C3CC0465744ADBD8D65715A4B5 /* mz_strm_zlib.c */; };
-		53830A0C5F732204DDA661045D6FA882 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 140776F73E38427DC826D566FC1E72BE /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5942A29AD472494424ADC027AEB18281 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A5B6154FD369610C5DFF5DF65D5295 /* mz_zip_rw.c */; };
-		5CC0C5ACF5344F19C9AE1372EB6A5773 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 469BDCEA09E97D5798D6DDC30C01B03E /* mz_compat.c */; };
-		5DE812E4914AB6D46FD0E23AF1C1051F /* mz_zip_rw.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E839C8ADDF9AA566CC73A1CFA93F24 /* mz_zip_rw.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		67DADE42FC256053BCAF78F18C48B3CC /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2412D89F4357131B08AB7522D938AF5 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6D17766ADF981D7BB643DCD6AEC8476C /* mz_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E18E7D08B76D974DD42CFCF4F7165C /* mz_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6F29E72A11F1766D2F9D9C9819F352FF /* GeoReversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9493E648E0C99584A77109EEE18F2367 /* GeoReversor.swift */; };
-		785D0001F6951BE9077475A5A877DC45 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B82B6050EDF009E9F30A4CCBE6B724 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7AF1F87480E7DB3B771F26C3185A5BAC /* mz_strm_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A10E12604CB5C2D813D323D1D92B021 /* mz_strm_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7DE7C8288AB7F9E5DBEAD4069A126574 /* mz_strm_os.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0382BA266BAEC1CD021B1F0A8BF6CD /* mz_strm_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		805D8D33AF6E06C005029369660BDC13 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = 8235FDE1F794FE1F3260A46F04BAE115 /* mz_crypt_apple.c */; };
-		8081377CF0A6B2A788FB8669F42653DD /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = AE46C19BAF608ECBFE3A261E55A55146 /* mz_strm_os_posix.c */; };
-		812777DB2A799B508949FA9880004BF7 /* KDTreePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBF4EBA5AD6FB2395B76EFE783BEB17 /* KDTreePoint.swift */; };
-		8272A6D717B53D0C27C61E84C49A67C1 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4262217E492BAB38179734C77694A382 /* mz_strm.c */; };
-		8377730BC16CC50AC6DAF50D5A3B3FAC /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 24ECDBE9B26A33172E58094D02056633 /* mz_crypt.c */; };
-		89907D74467C67C660DB2B34C23B338D /* KDTree+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155EE3CB816014C007F111F1CDF0B8F /* KDTree+Sequence.swift */; };
-		8CAB40A4DD55F599D3FD483E2D40DF1B /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA232AA1C887644730470CAB01C6B6E5 /* SSZipArchive-dummy.m */; };
-		958B796C5CC48CE03AFBE8DAF652D51F /* KDTree+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1D9670B5883850520D4EFA80CB1A0 /* KDTree+Codable.swift */; };
-		9CD7D5306A303B78801FCFD769175DC9 /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D820AC375EBFDF2FCDBFB9BC3A232B /* GeoLocation.swift */; };
-		9FA15E6315F49405B979F39FFE1140CC /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = 992B637598E94EF7B9929AC99D658C95 /* mz_os.c */; };
-		A3F7066CBD8BB4842363254F66A2F81D /* mz_strm_wzaes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFE43EE056FEEFEF34BDE7018DFFFF /* mz_strm_wzaes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A64A2A29599EF64625C2F13568CE517A /* mz_strm_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C1AA8FDF002ECA9A168A7FD3BBA23E /* mz_strm_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A817F03EF05CE223830590148F8AD1FB /* KDTree+NearestNeighbour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B0F4DA2BD865253EE5351891148AA /* KDTree+NearestNeighbour.swift */; };
-		AF5EE5F7E5DB64B9895A974D5570AFEE /* mz_strm_split.h in Headers */ = {isa = PBXBuildFile; fileRef = CB01A475948313A6E0E57AF9EE9F6A70 /* mz_strm_split.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B93FDAE87B6169764576135075A7819A /* KDTree+RangeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0BD6DF3DB5E21BA8C7F465A33F3CE7 /* KDTree+RangeSearch.swift */; };
-		C18BA80EF7955A2192EC3AC237C1AD06 /* mz_strm_zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = F4EC6EBB4C1222EE0ECF52722419D227 /* mz_strm_zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C67B8A6EB3A1F90F23A7D7FCDB96F49C /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A171354B2B1BA93EF7DEFFCBB790477 /* mz_strm_mem.c */; };
-		D00E6E108B7ED1DFB7AF2187392A5481 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2E066FF80424B701668B2D77C560BD /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D0D95CDD281F6506F218330DC3EBCD2A /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DBE66489982C4D1E2D6B92BDA3537A4F /* mz_strm_pkcrypt.c */; };
-		D45D3D693885DEF27F186E05D58D5ED6 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D797162278B1BC724D7DE9D436D831AD /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D9A677B2B1C52FB4B9C1DBB48C77C983 /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = F1E5C2958C967B4F3F2C3D049D0488D7 /* mz_strm_buf.c */; };
-		DE1D0430E18809A2C12BD9D7CEDFB9D2 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CECCF5D210691DFC111FB05E37872B /* SSZipCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DFF8B19FA49D97DCBDEADB15AAC936A8 /* cities5000.zip in Resources */ = {isa = PBXBuildFile; fileRef = 159EEFD4B7260DA5342C6006F4FB4B31 /* cities5000.zip */; };
-		E2B4C2C7C7C6DF84A58A83AD27F5E5AA /* GeoReversor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A799AA005DBAB36673B036AD27AC8A27 /* GeoReversor-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E662B3A46CDFAFE938C8297B0C3B40D6 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0F2EAF67E2AABC8EF321105441FEA /* SSZipArchive.m */; };
-		EFF8FAE04124552DC6DBC710D64243D1 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = AF5520E9DC8EAFAFBEB3FF39E2B6B824 /* mz_strm_wzaes.c */; };
-		FAE6A44D862C21BC71A18ACB1F336AA6 /* GeoReversor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A1C20252EDA9275385AFE49EEFF1A2 /* GeoReversor-dummy.m */; };
+		16DA93A8487D96488D05649A4C4911D7 /* KDTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9848952F2CEA2F39B4B24AD337357017 /* KDTree.swift */; };
+		1BC7944D9D93FBD4966BF345BDBCB89D /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3FFEDA320B82FC971B0FD2DA459F92 /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C01A60689C94B12607A2BE10ECE6FD8 /* KDTree+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3857122803712EA9E7636060356307A3 /* KDTree+Equatable.swift */; };
+		306073EF397841336D6D6F46B00EC571 /* cities5000.zip in Resources */ = {isa = PBXBuildFile; fileRef = 440814754944438AED1FA9C897B465A2 /* cities5000.zip */; };
+		3A749F6F3F422AC049179C78A03CB6E9 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DBE66489982C4D1E2D6B92BDA3537A4F /* mz_strm_pkcrypt.c */; };
+		3B0E98F9C38BA2814431F42F0DF7D5FF /* CGPoint+KDTreePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33220C9D479244A3182D94EAA00F2551 /* CGPoint+KDTreePoint.swift */; };
+		427ED26D656FCE6D2D8BB9F05BD64838 /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B93CF1983A6E099ECD1D3602A9C717A /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4361BCDAA99D9C3D1D141E37FE004237 /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A171354B2B1BA93EF7DEFFCBB790477 /* mz_strm_mem.c */; };
+		48750ADADCBB504A2F2945E37E664F5A /* mz_strm_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A10E12604CB5C2D813D323D1D92B021 /* mz_strm_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E064BE520B038249668412C28886F41 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = 469BDCEA09E97D5798D6DDC30C01B03E /* mz_compat.c */; };
+		511DDC21F5605276A50355B9443728DD /* mz_strm_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C1AA8FDF002ECA9A168A7FD3BBA23E /* mz_strm_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58C50003466E4CADC21053DD0EBDABAE /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 60CECCF5D210691DFC111FB05E37872B /* SSZipCommon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59B48088C7C3DAAAC53B22B81E6B441C /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = EBDAD1C3CC0465744ADBD8D65715A4B5 /* mz_strm_zlib.c */; };
+		681C4D42C257BEF406D9E7CDCBA21C77 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = E2412D89F4357131B08AB7522D938AF5 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68DFFD4FD05157796D1B9B74689836C6 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF0F2EAF67E2AABC8EF321105441FEA /* SSZipArchive.m */; };
+		6F29E72A11F1766D2F9D9C9819F352FF /* GeoReversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55627F7ADFE53280CD0BF13C77D0E52 /* GeoReversor.swift */; };
+		71EE969D22F180E37C761FCDADF56A07 /* mz.h in Headers */ = {isa = PBXBuildFile; fileRef = 39447AE6C30B64C6A84908E6C646DE06 /* mz.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7962B6A878E8EAC7247FDE76BEC77ABC /* mz_strm_wzaes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFE43EE056FEEFEF34BDE7018DFFFF /* mz_strm_wzaes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		812777DB2A799B508949FA9880004BF7 /* KDTreePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A54E77829C31DAD76C6A977CC8E5B /* KDTreePoint.swift */; };
+		89907D74467C67C660DB2B34C23B338D /* KDTree+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88A218B4F302663E632C6E9D955167E /* KDTree+Sequence.swift */; };
+		8AE9F47D71A3A2069C6F201314726BE0 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = 25A5B6154FD369610C5DFF5DF65D5295 /* mz_zip_rw.c */; };
+		8FF2AA9E4EA399BE6FFF5341A526E854 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B82B6050EDF009E9F30A4CCBE6B724 /* ZipArchive.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		932388D8EE19BCD45DAF6E65E8354B06 /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = AE46C19BAF608ECBFE3A261E55A55146 /* mz_strm_os_posix.c */; };
+		958B796C5CC48CE03AFBE8DAF652D51F /* KDTree+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B567629DB0FF1BC8AE907A6B0EDADA5 /* KDTree+Codable.swift */; };
+		9730489CB51D5CD8FDCE0A87B3C147AB /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD91F4E1E2093590782280030A465D /* countries.txt */; };
+		99E0493ED5AA62134E2E99EDE871510C /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = 72C645BF4E7B7ED9A6B11CC0B506EB4B /* mz_os_posix.c */; };
+		9AD669AD16E989AE82BE48C139B9F442 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = AEEA9F462777A969324BA2658C7F1127 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CD7D5306A303B78801FCFD769175DC9 /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8345E47C468F808A5B5427ED46D0A32 /* GeoLocation.swift */; };
+		A5B3E325FD822810B74D8661558955EA /* mz_strm_split.h in Headers */ = {isa = PBXBuildFile; fileRef = CB01A475948313A6E0E57AF9EE9F6A70 /* mz_strm_split.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A817F03EF05CE223830590148F8AD1FB /* KDTree+NearestNeighbour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F41DE7876537DE5D2CDCFC2FA5D940 /* KDTree+NearestNeighbour.swift */; };
+		A8755228637D96342D71E8D5D557C43B /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 24ECDBE9B26A33172E58094D02056633 /* mz_crypt.c */; };
+		AB6EE4516A7F14E1824D84824E2F2DC5 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = 8235FDE1F794FE1F3260A46F04BAE115 /* mz_crypt_apple.c */; };
+		AD3F2535B399C48126BA75849D0DBE0E /* cities1000.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3A559F15424DD26B2C3B123D2DC11C3F /* cities1000.zip */; };
+		B93FDAE87B6169764576135075A7819A /* KDTree+RangeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E125A00A0FF8E7C7C92DD1307B613ED /* KDTree+RangeSearch.swift */; };
+		BB5CC709B1EF36C52E380DC5CE6459A6 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA232AA1C887644730470CAB01C6B6E5 /* SSZipArchive-dummy.m */; };
+		C73CF29A1980C38098359FFF338B4334 /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = F1E5C2958C967B4F3F2C3D049D0488D7 /* mz_strm_buf.c */; };
+		D0CEC5ACD606874ACA55966028529BF7 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = AF5520E9DC8EAFAFBEB3FF39E2B6B824 /* mz_strm_wzaes.c */; };
+		D632E23CDDE0759CB8758506AA74CB95 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D797162278B1BC724D7DE9D436D831AD /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E0A796349B77E34BA5CFAD0C3E724AC2 /* mz_zip_rw.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E839C8ADDF9AA566CC73A1CFA93F24 /* mz_zip_rw.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2376E02336BCD6AD7B2F79D21D28A87 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4262217E492BAB38179734C77694A382 /* mz_strm.c */; };
+		E2B4C2C7C7C6DF84A58A83AD27F5E5AA /* GeoReversor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2BC5BC634ACC3113806D674F2C1C2C /* GeoReversor-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F04665B07A5BC105C3F6DC771A63D895 /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = 845CC09BE46F79E82C14446D6AB4FF9F /* mz_strm_split.c */; };
+		F0D1C6BF4213194B3EB7897300F26D03 /* mz_strm_os.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0382BA266BAEC1CD021B1F0A8BF6CD /* mz_strm_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F5242A1C93B16C5A0C74B4F45D6F9B24 /* mz_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E18E7D08B76D974DD42CFCF4F7165C /* mz_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAE6A44D862C21BC71A18ACB1F336AA6 /* GeoReversor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A3163176688E3E39371559B2B28B31 /* GeoReversor-dummy.m */; };
+		FB6B1FFB96F055ABCE18BB93CD920A48 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2E066FF80424B701668B2D77C560BD /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FE09676DFD2E5BA2FC76B484605FA8DC /* Pods-GeoReversor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D23BBB50507FAF6899D3E72F422A2D /* Pods-GeoReversor_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF38A5BA1772BD979C9DAD663CB81975 /* mz_strm_zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = F4EC6EBB4C1222EE0ECF52722419D227 /* mz_strm_zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0863BF019FA3B872BC8DEEED03185D92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84E4EEAF534C593E898D26137059B67E;
-			remoteInfo = "GeoReversor-GeoReversor";
-		};
-		0B7AB027CCCB18C24DC9A5EC8F3DAD80 /* PBXContainerItemProxy */ = {
+		8027E0E4757A6BFC90E5903784867207 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
 			remoteInfo = SSZipArchive;
 		};
-		50F7CB94CEE8F89473CF8CB4AD90E4B9 /* PBXContainerItemProxy */ = {
+		A8A3BBA4EDBEF1FB21FD6D373E7AA531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7C51BE9E33B118B0C2738E58549341C3;
 			remoteInfo = GeoReversor;
 		};
-		A1A49E59879BDBA52624563BD01494C5 /* PBXContainerItemProxy */ = {
+		E2371074B4FEB28B4836CBA5BBDFAC95 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F60E38364AFF5E1349FF07415B944396;
 			remoteInfo = SSZipArchive;
 		};
+		F68623621E129B4364E97A8FD81B9A7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84E4EEAF534C593E898D26137059B67E;
+			remoteInfo = "GeoReversor-GeoReversor";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00905473E70C27678B50327452A6994F /* GeoReversor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoReversor.debug.xcconfig; sourceTree = "<group>"; };
 		0E1683B145EF5BCFF5482D4CD507DF88 /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
 		12C1AA8FDF002ECA9A168A7FD3BBA23E /* mz_strm_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_buf.h; path = SSZipArchive/minizip/mz_strm_buf.h; sourceTree = "<group>"; };
 		140776F73E38427DC826D566FC1E72BE /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
 		158505A03770AF2DB76FF314D677B516 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		159EEFD4B7260DA5342C6006F4FB4B31 /* cities5000.zip */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.zip; name = cities5000.zip; path = GeoReversor/Assets/cities5000.zip; sourceTree = "<group>"; };
 		16E18E7D08B76D974DD42CFCF4F7165C /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
 		16E839C8ADDF9AA566CC73A1CFA93F24 /* mz_zip_rw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = SSZipArchive/minizip/mz_zip_rw.h; sourceTree = "<group>"; };
 		1A10E12604CB5C2D813D323D1D92B021 /* mz_strm_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = SSZipArchive/minizip/mz_strm_mem.h; sourceTree = "<group>"; };
 		1B39C7183F7F4C640C3EF14F150A37B3 /* Pods-GeoReversor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoReversor_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1B4DFB7D69BBC4AC79D6702B745C747A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1CAD91F4E1E2093590782280030A465D /* countries.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = countries.txt; path = GeoReversor/Assets/countries.txt; sourceTree = "<group>"; };
 		1E3FFEDA320B82FC971B0FD2DA459F92 /* mz_zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = SSZipArchive/minizip/mz_zip.h; sourceTree = "<group>"; };
 		21B82B6050EDF009E9F30A4CCBE6B724 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/include/ZipArchive.h; sourceTree = "<group>"; };
 		24ECDBE9B26A33172E58094D02056633 /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
 		25A5B6154FD369610C5DFF5DF65D5295 /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
-		25A6570A86F7242D5F5F37F670A4D4B4 /* KDTree+CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		26F41DE7876537DE5D2CDCFC2FA5D940 /* KDTree+NearestNeighbour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+NearestNeighbour.swift"; sourceTree = "<group>"; };
+		2C0FC05230FDA4F9E5BA834D01C68266 /* GeoReversor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GeoReversor.modulemap; sourceTree = "<group>"; };
 		2D4105A52D227785F584498C9C74CE91 /* Pods-GeoReversor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoReversor_Example-dummy.m"; sourceTree = "<group>"; };
 		2E5BE45F3D20F2D39B523EDEA0813823 /* GeoReversor */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = GeoReversor; path = libGeoReversor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		333F4508FCCB9611E883107ED5028F7B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		35E3B948E596AB0784137002EC02D67E /* ResourceBundle-GeoReversor-GeoReversor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GeoReversor-GeoReversor-Info.plist"; sourceTree = "<group>"; };
-		36461E841F5465E87C8F5B3A7B9B9B32 /* CGPoint+KDTreePoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGPoint+KDTreePoint.swift"; sourceTree = "<group>"; };
-		36BFEFFF465FE77531E58D82F747C776 /* KDTree+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Equatable.swift"; sourceTree = "<group>"; };
+		33220C9D479244A3182D94EAA00F2551 /* CGPoint+KDTreePoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGPoint+KDTreePoint.swift"; sourceTree = "<group>"; };
+		3857122803712EA9E7636060356307A3 /* KDTree+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Equatable.swift"; sourceTree = "<group>"; };
 		39447AE6C30B64C6A84908E6C646DE06 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
 		39DB81D5C85EDD4164B5346F5E83F8C3 /* Pods-GeoReversor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoReversor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A559F15424DD26B2C3B123D2DC11C3F /* cities1000.zip */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.zip; name = cities1000.zip; path = GeoReversor/Assets/cities1000.zip; sourceTree = "<group>"; };
 		3D6C0A3DEF131CDAF9AE423602560CCA /* Pods-GeoReversor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoReversor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E125A00A0FF8E7C7C92DD1307B613ED /* KDTree+RangeSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+RangeSearch.swift"; sourceTree = "<group>"; };
 		3FD43EC7081C2C90F8E6F58F55FECEBD /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
 		4262217E492BAB38179734C77694A382 /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
+		440814754944438AED1FA9C897B465A2 /* cities5000.zip */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.zip; name = cities5000.zip; path = GeoReversor/Assets/cities5000.zip; sourceTree = "<group>"; };
 		469BDCEA09E97D5798D6DDC30C01B03E /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
+		485ED5AA83D339F398F513A18571D171 /* GeoReversor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoReversor.debug.xcconfig; sourceTree = "<group>"; };
 		4DF0F2EAF67E2AABC8EF321105441FEA /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		4F837169843B9961B67D1C1FFB2919D0 /* GeoReversor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoReversor.release.xcconfig; sourceTree = "<group>"; };
 		4FB75EAABFD0B9B4B88D5C9719E9B0AC /* GeoReversor-GeoReversor */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GeoReversor-GeoReversor"; path = GeoReversor.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		585C2356A68EB6DAC323F77321A857EC /* GeoReversor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoReversor-prefix.pch"; sourceTree = "<group>"; };
 		5B93CF1983A6E099ECD1D3602A9C717A /* mz_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = SSZipArchive/minizip/mz_os.h; sourceTree = "<group>"; };
-		5E0BD6DF3DB5E21BA8C7F465A33F3CE7 /* KDTree+RangeSearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+RangeSearch.swift"; sourceTree = "<group>"; };
 		60CECCF5D210691DFC111FB05E37872B /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		670477B75BB8836D917A50C479F1FCCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		67986C43371D4DD6F0089E6B7034E3F7 /* Pods-GeoReversor_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoReversor_Example-resources.sh"; sourceTree = "<group>"; };
 		67D23BBB50507FAF6899D3E72F422A2D /* Pods-GeoReversor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoReversor_Example-umbrella.h"; sourceTree = "<group>"; };
+		698BD6F70F3234336468FBB71705207C /* GeoReversor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GeoReversor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6A171354B2B1BA93EF7DEFFCBB790477 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
 		6ACFE43EE056FEEFEF34BDE7018DFFFF /* mz_strm_wzaes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_wzaes.h; path = SSZipArchive/minizip/mz_strm_wzaes.h; sourceTree = "<group>"; };
 		72C645BF4E7B7ED9A6B11CC0B506EB4B /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
-		747F92E53D1FF932471BCA78A7AE1E70 /* countries.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = countries.txt; path = GeoReversor/Assets/countries.txt; sourceTree = "<group>"; };
-		80130F3C2EF2907ACE8F2AFE37036B45 /* GeoReversor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeoReversor.release.xcconfig; sourceTree = "<group>"; };
+		7F4A54E77829C31DAD76C6A977CC8E5B /* KDTreePoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KDTreePoint.swift; sourceTree = "<group>"; };
+		816C6520EC90A8DDF974A158FB27092F /* KDTree+CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		8235FDE1F794FE1F3260A46F04BAE115 /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
 		845CC09BE46F79E82C14446D6AB4FF9F /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
-		8FDB821CC9D8A2F40392F477F7DDACE3 /* GeoReversor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GeoReversor.modulemap; sourceTree = "<group>"; };
+		8B567629DB0FF1BC8AE907A6B0EDADA5 /* KDTree+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Codable.swift"; sourceTree = "<group>"; };
 		91B23470DEB9A986332BEB5034234BC7 /* SSZipArchive */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SSZipArchive; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9493E648E0C99584A77109EEE18F2367 /* GeoReversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoReversor.swift; path = GeoReversor/Classes/GeoReversor.swift; sourceTree = "<group>"; };
+		9848952F2CEA2F39B4B24AD337357017 /* KDTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KDTree.swift; sourceTree = "<group>"; };
 		992B637598E94EF7B9929AC99D658C95 /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
 		9C2E066FF80424B701668B2D77C560BD /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A265E51DEAE3B58B8D8BC379885FE37F /* GeoReversor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GeoReversor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3B27A72CBE2C688B0471E28255E900C /* SSZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.debug.xcconfig; sourceTree = "<group>"; };
-		A799AA005DBAB36673B036AD27AC8A27 /* GeoReversor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoReversor-umbrella.h"; sourceTree = "<group>"; };
 		A7D118BEE53CE4A4DC8D9C1B346A5083 /* Pods-GeoReversor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoReversor_Example.modulemap"; sourceTree = "<group>"; };
 		AE46C19BAF608ECBFE3A261E55A55146 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
 		AEEA9F462777A969324BA2658C7F1127 /* mz_strm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = SSZipArchive/minizip/mz_strm.h; sourceTree = "<group>"; };
 		AF5520E9DC8EAFAFBEB3FF39E2B6B824 /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
 		B1B34135BBEDF2F0516326742438D607 /* Pods-GeoReversor_Example */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-GeoReversor_Example"; path = "libPods-GeoReversor_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2D820AC375EBFDF2FCDBFB9BC3A232B /* GeoLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoLocation.swift; path = GeoReversor/Classes/GeoLocation.swift; sourceTree = "<group>"; };
+		B88A218B4F302663E632C6E9D955167E /* KDTree+Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Sequence.swift"; sourceTree = "<group>"; };
 		BB8CCD7D13E5DE8706F5A4CC19095B33 /* Pods-GeoReversor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoReversor_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C34B0F4DA2BD865253EE5351891148AA /* KDTree+NearestNeighbour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+NearestNeighbour.swift"; sourceTree = "<group>"; };
 		CB01A475948313A6E0E57AF9EE9F6A70 /* mz_strm_split.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = SSZipArchive/minizip/mz_strm_split.h; sourceTree = "<group>"; };
-		D3C1D9670B5883850520D4EFA80CB1A0 /* KDTree+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Codable.swift"; sourceTree = "<group>"; };
+		D55627F7ADFE53280CD0BF13C77D0E52 /* GeoReversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoReversor.swift; path = GeoReversor/Classes/GeoReversor.swift; sourceTree = "<group>"; };
 		D797162278B1BC724D7DE9D436D831AD /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
-		D9A1C20252EDA9275385AFE49EEFF1A2 /* GeoReversor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GeoReversor-dummy.m"; sourceTree = "<group>"; };
+		D8345E47C468F808A5B5427ED46D0A32 /* GeoLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoLocation.swift; path = GeoReversor/Classes/GeoLocation.swift; sourceTree = "<group>"; };
 		DA232AA1C887644730470CAB01C6B6E5 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
 		DBE66489982C4D1E2D6B92BDA3537A4F /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
-		DCBF4EBA5AD6FB2395B76EFE783BEB17 /* KDTreePoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KDTreePoint.swift; sourceTree = "<group>"; };
 		DD0382BA266BAEC1CD021B1F0A8BF6CD /* mz_strm_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_os.h; path = SSZipArchive/minizip/mz_strm_os.h; sourceTree = "<group>"; };
-		DEF09C0018DB75F805226D83FCEFE578 /* KDTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KDTree.swift; sourceTree = "<group>"; };
 		E2412D89F4357131B08AB7522D938AF5 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		EAB0C28FAD55215C9A605B8AAD0FD103 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EA2BC5BC634ACC3113806D674F2C1C2C /* GeoReversor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoReversor-umbrella.h"; sourceTree = "<group>"; };
 		EBDAD1C3CC0465744ADBD8D65715A4B5 /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
-		F155EE3CB816014C007F111F1CDF0B8F /* KDTree+Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "KDTree+Sequence.swift"; sourceTree = "<group>"; };
 		F1E5C2958C967B4F3F2C3D049D0488D7 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
 		F4EC6EBB4C1222EE0ECF52722419D227 /* mz_strm_zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_zlib.h; path = SSZipArchive/minizip/mz_strm_zlib.h; sourceTree = "<group>"; };
+		F7A3163176688E3E39371559B2B28B31 /* GeoReversor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GeoReversor-dummy.m"; sourceTree = "<group>"; };
 		F98D0085EF3B9B9109CBC5C64C58BBDF /* SSZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.release.xcconfig; sourceTree = "<group>"; };
+		F9D0437DD1580E9EF1B9541829D99599 /* GeoReversor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GeoReversor-prefix.pch"; sourceTree = "<group>"; };
+		FC44906A907A0ADDE9BE7D28D861ACA5 /* ResourceBundle-GeoReversor-GeoReversor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GeoReversor-GeoReversor-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		113C6DD4D4071F8C680CE34408C0BB84 /* Frameworks */ = {
+		259602923FB0C609AC484DE583FDA277 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,7 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB2221B3EE86F616E631AE763BC578C2 /* Frameworks */ = {
+		B9737522FA0C6D46313C0F895B73CDEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,24 +204,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3646BF436444177F768A27B0CD0FE982 /* Development Pods */ = {
+		0B19D627FB5E5443E9FD34536605BCFE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6E8946C6CDCA39062826752E8651FF74 /* GeoReversor */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4BC29A508C7F86AD6B628926897968DB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8FDB821CC9D8A2F40392F477F7DDACE3 /* GeoReversor.modulemap */,
-				D9A1C20252EDA9275385AFE49EEFF1A2 /* GeoReversor-dummy.m */,
-				585C2356A68EB6DAC323F77321A857EC /* GeoReversor-prefix.pch */,
-				A799AA005DBAB36673B036AD27AC8A27 /* GeoReversor-umbrella.h */,
-				00905473E70C27678B50327452A6994F /* GeoReversor.debug.xcconfig */,
-				80130F3C2EF2907ACE8F2AFE37036B45 /* GeoReversor.release.xcconfig */,
-				35E3B948E596AB0784137002EC02D67E /* ResourceBundle-GeoReversor-GeoReversor-Info.plist */,
+				2C0FC05230FDA4F9E5BA834D01C68266 /* GeoReversor.modulemap */,
+				F7A3163176688E3E39371559B2B28B31 /* GeoReversor-dummy.m */,
+				F9D0437DD1580E9EF1B9541829D99599 /* GeoReversor-prefix.pch */,
+				EA2BC5BC634ACC3113806D674F2C1C2C /* GeoReversor-umbrella.h */,
+				485ED5AA83D339F398F513A18571D171 /* GeoReversor.debug.xcconfig */,
+				4F837169843B9961B67D1C1FFB2919D0 /* GeoReversor.release.xcconfig */,
+				FC44906A907A0ADDE9BE7D28D861ACA5 /* ResourceBundle-GeoReversor-GeoReversor-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/GeoReversor";
@@ -233,36 +227,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		691A0A14DB32030E78489C85238CF0FA /* KDTree */ = {
+		5B8416671719CF353C1563F6A955578B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36461E841F5465E87C8F5B3A7B9B9B32 /* CGPoint+KDTreePoint.swift */,
-				DEF09C0018DB75F805226D83FCEFE578 /* KDTree.swift */,
-				D3C1D9670B5883850520D4EFA80CB1A0 /* KDTree+Codable.swift */,
-				25A6570A86F7242D5F5F37F670A4D4B4 /* KDTree+CustomStringConvertible.swift */,
-				36BFEFFF465FE77531E58D82F747C776 /* KDTree+Equatable.swift */,
-				C34B0F4DA2BD865253EE5351891148AA /* KDTree+NearestNeighbour.swift */,
-				5E0BD6DF3DB5E21BA8C7F465A33F3CE7 /* KDTree+RangeSearch.swift */,
-				F155EE3CB816014C007F111F1CDF0B8F /* KDTree+Sequence.swift */,
-				DCBF4EBA5AD6FB2395B76EFE783BEB17 /* KDTreePoint.swift */,
+				EE06A8A300FCA7716E4A5074E714105C /* GeoReversor */,
 			);
-			name = KDTree;
-			path = GeoReversor/Classes/KDTree;
-			sourceTree = "<group>";
-		};
-		6E8946C6CDCA39062826752E8651FF74 /* GeoReversor */ = {
-			isa = PBXGroup;
-			children = (
-				159EEFD4B7260DA5342C6006F4FB4B31 /* cities5000.zip */,
-				747F92E53D1FF932471BCA78A7AE1E70 /* countries.txt */,
-				B2D820AC375EBFDF2FCDBFB9BC3A232B /* GeoLocation.swift */,
-				9493E648E0C99584A77109EEE18F2367 /* GeoReversor.swift */,
-				691A0A14DB32030E78489C85238CF0FA /* KDTree */,
-				7DB54D61F61C444732A57201B75E2766 /* Pod */,
-				4BC29A508C7F86AD6B628926897968DB /* Support Files */,
-			);
-			name = GeoReversor;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7707B631EFCD37718415484402112D05 /* Pods-GeoReversor_Example */ = {
@@ -279,16 +249,6 @@
 			);
 			name = "Pods-GeoReversor_Example";
 			path = "Target Support Files/Pods-GeoReversor_Example";
-			sourceTree = "<group>";
-		};
-		7DB54D61F61C444732A57201B75E2766 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A265E51DEAE3B58B8D8BC379885FE37F /* GeoReversor.podspec */,
-				333F4508FCCB9611E883107ED5028F7B /* LICENSE */,
-				EAB0C28FAD55215C9A605B8AAD0FD103 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		9EA354213BED72016FEE4210F324AE6D /* Targets Support Files */ = {
@@ -341,11 +301,28 @@
 			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
+		B0E3383AC13C9C5C782AF76CBC433376 /* KDTree */ = {
+			isa = PBXGroup;
+			children = (
+				33220C9D479244A3182D94EAA00F2551 /* CGPoint+KDTreePoint.swift */,
+				9848952F2CEA2F39B4B24AD337357017 /* KDTree.swift */,
+				8B567629DB0FF1BC8AE907A6B0EDADA5 /* KDTree+Codable.swift */,
+				816C6520EC90A8DDF974A158FB27092F /* KDTree+CustomStringConvertible.swift */,
+				3857122803712EA9E7636060356307A3 /* KDTree+Equatable.swift */,
+				26F41DE7876537DE5D2CDCFC2FA5D940 /* KDTree+NearestNeighbour.swift */,
+				3E125A00A0FF8E7C7C92DD1307B613ED /* KDTree+RangeSearch.swift */,
+				B88A218B4F302663E632C6E9D955167E /* KDTree+Sequence.swift */,
+				7F4A54E77829C31DAD76C6A977CC8E5B /* KDTreePoint.swift */,
+			);
+			name = KDTree;
+			path = GeoReversor/Classes/KDTree;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3646BF436444177F768A27B0CD0FE982 /* Development Pods */,
+				5B8416671719CF353C1563F6A955578B /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				4C2EFC1AA7AA397C59A05B54BB923DDA /* Pods */,
 				E9CC72783BB4493F88F322F09B991F0F /* Products */,
@@ -385,39 +362,65 @@
 			path = "../Target Support Files/SSZipArchive";
 			sourceTree = "<group>";
 		};
+		EE06A8A300FCA7716E4A5074E714105C /* GeoReversor */ = {
+			isa = PBXGroup;
+			children = (
+				3A559F15424DD26B2C3B123D2DC11C3F /* cities1000.zip */,
+				440814754944438AED1FA9C897B465A2 /* cities5000.zip */,
+				1CAD91F4E1E2093590782280030A465D /* countries.txt */,
+				D8345E47C468F808A5B5427ED46D0A32 /* GeoLocation.swift */,
+				D55627F7ADFE53280CD0BF13C77D0E52 /* GeoReversor.swift */,
+				B0E3383AC13C9C5C782AF76CBC433376 /* KDTree */,
+				F1365EC556910E9C28C7280FBB1685C7 /* Pod */,
+				0B19D627FB5E5443E9FD34536605BCFE /* Support Files */,
+			);
+			name = GeoReversor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F1365EC556910E9C28C7280FBB1685C7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				698BD6F70F3234336468FBB71705207C /* GeoReversor.podspec */,
+				670477B75BB8836D917A50C479F1FCCE /* LICENSE */,
+				1B4DFB7D69BBC4AC79D6702B745C747A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		087041F02DB92A56485802FCC47AB351 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71EE969D22F180E37C761FCDADF56A07 /* mz.h in Headers */,
+				F5242A1C93B16C5A0C74B4F45D6F9B24 /* mz_compat.h in Headers */,
+				02F63C7D11DA63B19FE07E9D0DFAC0C7 /* mz_crypt.h in Headers */,
+				427ED26D656FCE6D2D8BB9F05BD64838 /* mz_os.h in Headers */,
+				9AD669AD16E989AE82BE48C139B9F442 /* mz_strm.h in Headers */,
+				511DDC21F5605276A50355B9443728DD /* mz_strm_buf.h in Headers */,
+				48750ADADCBB504A2F2945E37E664F5A /* mz_strm_mem.h in Headers */,
+				F0D1C6BF4213194B3EB7897300F26D03 /* mz_strm_os.h in Headers */,
+				FB6B1FFB96F055ABCE18BB93CD920A48 /* mz_strm_pkcrypt.h in Headers */,
+				A5B3E325FD822810B74D8661558955EA /* mz_strm_split.h in Headers */,
+				7962B6A878E8EAC7247FDE76BEC77ABC /* mz_strm_wzaes.h in Headers */,
+				FF38A5BA1772BD979C9DAD663CB81975 /* mz_strm_zlib.h in Headers */,
+				1BC7944D9D93FBD4966BF345BDBCB89D /* mz_zip.h in Headers */,
+				E0A796349B77E34BA5CFAD0C3E724AC2 /* mz_zip_rw.h in Headers */,
+				681C4D42C257BEF406D9E7CDCBA21C77 /* SSZipArchive.h in Headers */,
+				D632E23CDDE0759CB8758506AA74CB95 /* SSZipArchive-umbrella.h in Headers */,
+				58C50003466E4CADC21053DD0EBDABAE /* SSZipCommon.h in Headers */,
+				8FF2AA9E4EA399BE6FFF5341A526E854 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1667BBDE0742FC2687E4009AA29F52EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E2B4C2C7C7C6DF84A58A83AD27F5E5AA /* GeoReversor-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		34D23328C3AA9358729ED5CADE90EF22 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EF052F6C2D0D8D74AD62AF428773EA9 /* mz.h in Headers */,
-				6D17766ADF981D7BB643DCD6AEC8476C /* mz_compat.h in Headers */,
-				53830A0C5F732204DDA661045D6FA882 /* mz_crypt.h in Headers */,
-				49AB5CDB43492A59B94231DFA8B4544E /* mz_os.h in Headers */,
-				40666A8E10CA3EA1F0A6D9282B1481B0 /* mz_strm.h in Headers */,
-				A64A2A29599EF64625C2F13568CE517A /* mz_strm_buf.h in Headers */,
-				7AF1F87480E7DB3B771F26C3185A5BAC /* mz_strm_mem.h in Headers */,
-				7DE7C8288AB7F9E5DBEAD4069A126574 /* mz_strm_os.h in Headers */,
-				D00E6E108B7ED1DFB7AF2187392A5481 /* mz_strm_pkcrypt.h in Headers */,
-				AF5EE5F7E5DB64B9895A974D5570AFEE /* mz_strm_split.h in Headers */,
-				A3F7066CBD8BB4842363254F66A2F81D /* mz_strm_wzaes.h in Headers */,
-				C18BA80EF7955A2192EC3AC237C1AD06 /* mz_strm_zlib.h in Headers */,
-				12A3182A615D322C6592C4AC09E0D6A7 /* mz_zip.h in Headers */,
-				5DE812E4914AB6D46FD0E23AF1C1051F /* mz_zip_rw.h in Headers */,
-				67DADE42FC256053BCAF78F18C48B3CC /* SSZipArchive.h in Headers */,
-				D45D3D693885DEF27F186E05D58D5ED6 /* SSZipArchive-umbrella.h in Headers */,
-				DE1D0430E18809A2C12BD9D7CEDFB9D2 /* SSZipCommon.h in Headers */,
-				785D0001F6951BE9077475A5A877DC45 /* ZipArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,8 +447,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				9674236C0991A653CCB305E8E58E5FB0 /* PBXTargetDependency */,
-				33E0C85777A4C2462B3DB711867D0948 /* PBXTargetDependency */,
+				D944307F21A877E14548EF1947EE341A /* PBXTargetDependency */,
+				4FDC23184145157B352E8624CDE01B1C /* PBXTargetDependency */,
 			);
 			name = GeoReversor;
 			productName = GeoReversor;
@@ -454,11 +457,11 @@
 		};
 		84E4EEAF534C593E898D26137059B67E /* GeoReversor-GeoReversor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C8F5EF34D8D91020401B88464F6A445 /* Build configuration list for PBXNativeTarget "GeoReversor-GeoReversor" */;
+			buildConfigurationList = 63C605659D26BD36A04040456F2595F8 /* Build configuration list for PBXNativeTarget "GeoReversor-GeoReversor" */;
 			buildPhases = (
-				B2F0532307DF6F107506DD2F5EEFF5B7 /* Sources */,
-				EB2221B3EE86F616E631AE763BC578C2 /* Frameworks */,
-				8BFA5BB1B9CB65A712B3E58DEE98B75F /* Resources */,
+				164E2AEAC6C14A15B544AB0D62F53582 /* Sources */,
+				259602923FB0C609AC484DE583FDA277 /* Frameworks */,
+				735E57DED3F84329C8FE3F3E1F88BC43 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -480,8 +483,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0D152EBFD2E7CE97CE9406726849C93 /* PBXTargetDependency */,
-				65F383A64DE9C79A93D82179884796DA /* PBXTargetDependency */,
+				0BA6F3B4CD3C1C491F685F462E2AB5BB /* PBXTargetDependency */,
+				00D07B4D1CDC0CAC102E9526FC461498 /* PBXTargetDependency */,
 			);
 			name = "Pods-GeoReversor_Example";
 			productName = "Pods-GeoReversor_Example";
@@ -490,11 +493,11 @@
 		};
 		F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E68617CDF6C4E9FF2975144E84E3411 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildConfigurationList = 6187D8304CC76B3254930EE03A15F2E5 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
 			buildPhases = (
-				34D23328C3AA9358729ED5CADE90EF22 /* Headers */,
-				02471DED3B92C3095D43B342D657EECF /* Sources */,
-				113C6DD4D4071F8C680CE34408C0BB84 /* Frameworks */,
+				087041F02DB92A56485802FCC47AB351 /* Headers */,
+				CD57994CD5B4B614D62EE27EF97DB993 /* Sources */,
+				B9737522FA0C6D46313C0F895B73CDEB /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -536,12 +539,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8BFA5BB1B9CB65A712B3E58DEE98B75F /* Resources */ = {
+		735E57DED3F84329C8FE3F3E1F88BC43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFF8B19FA49D97DCBDEADB15AAC936A8 /* cities5000.zip in Resources */,
-				0C33A0301DF49DA6CF0207F6FA88E694 /* countries.txt in Resources */,
+				AD3F2535B399C48126BA75849D0DBE0E /* cities1000.zip in Resources */,
+				306073EF397841336D6D6F46B00EC571 /* cities5000.zip in Resources */,
+				9730489CB51D5CD8FDCE0A87B3C147AB /* countries.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,27 +579,10 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02471DED3B92C3095D43B342D657EECF /* Sources */ = {
+		164E2AEAC6C14A15B544AB0D62F53582 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC0C5ACF5344F19C9AE1372EB6A5773 /* mz_compat.c in Sources */,
-				8377730BC16CC50AC6DAF50D5A3B3FAC /* mz_crypt.c in Sources */,
-				805D8D33AF6E06C005029369660BDC13 /* mz_crypt_apple.c in Sources */,
-				9FA15E6315F49405B979F39FFE1140CC /* mz_os.c in Sources */,
-				144156B3221F7B0F88E0E2922E6220C2 /* mz_os_posix.c in Sources */,
-				8272A6D717B53D0C27C61E84C49A67C1 /* mz_strm.c in Sources */,
-				D9A677B2B1C52FB4B9C1DBB48C77C983 /* mz_strm_buf.c in Sources */,
-				C67B8A6EB3A1F90F23A7D7FCDB96F49C /* mz_strm_mem.c in Sources */,
-				8081377CF0A6B2A788FB8669F42653DD /* mz_strm_os_posix.c in Sources */,
-				D0D95CDD281F6506F218330DC3EBCD2A /* mz_strm_pkcrypt.c in Sources */,
-				1D51F1D3A3A048A5B6746DD61BA998FA /* mz_strm_split.c in Sources */,
-				EFF8FAE04124552DC6DBC710D64243D1 /* mz_strm_wzaes.c in Sources */,
-				52A38843AD3A92F5F61875BF493BF408 /* mz_strm_zlib.c in Sources */,
-				3D558F10F51C305F4859C3B3B26C78A4 /* mz_zip.c in Sources */,
-				5942A29AD472494424ADC027AEB18281 /* mz_zip_rw.c in Sources */,
-				E662B3A46CDFAFE938C8297B0C3B40D6 /* SSZipArchive.m in Sources */,
-				8CAB40A4DD55F599D3FD483E2D40DF1B /* SSZipArchive-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,10 +605,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2F0532307DF6F107506DD2F5EEFF5B7 /* Sources */ = {
+		CD57994CD5B4B614D62EE27EF97DB993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E064BE520B038249668412C28886F41 /* mz_compat.c in Sources */,
+				A8755228637D96342D71E8D5D557C43B /* mz_crypt.c in Sources */,
+				AB6EE4516A7F14E1824D84824E2F2DC5 /* mz_crypt_apple.c in Sources */,
+				083489E7615ED6C98181CA1FA5E6BCD2 /* mz_os.c in Sources */,
+				99E0493ED5AA62134E2E99EDE871510C /* mz_os_posix.c in Sources */,
+				E2376E02336BCD6AD7B2F79D21D28A87 /* mz_strm.c in Sources */,
+				C73CF29A1980C38098359FFF338B4334 /* mz_strm_buf.c in Sources */,
+				4361BCDAA99D9C3D1D141E37FE004237 /* mz_strm_mem.c in Sources */,
+				932388D8EE19BCD45DAF6E65E8354B06 /* mz_strm_os_posix.c in Sources */,
+				3A749F6F3F422AC049179C78A03CB6E9 /* mz_strm_pkcrypt.c in Sources */,
+				F04665B07A5BC105C3F6DC771A63D895 /* mz_strm_split.c in Sources */,
+				D0CEC5ACD606874ACA55966028529BF7 /* mz_strm_wzaes.c in Sources */,
+				59B48088C7C3DAAAC53B22B81E6B441C /* mz_strm_zlib.c in Sources */,
+				05291D5792AC9FB295019EE92E500499 /* mz_zip.c in Sources */,
+				8AE9F47D71A3A2069C6F201314726BE0 /* mz_zip_rw.c in Sources */,
+				68DFFD4FD05157796D1B9B74689836C6 /* SSZipArchive.m in Sources */,
+				BB5CC709B1EF36C52E380DC5CE6459A6 /* SSZipArchive-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,68 +640,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		33E0C85777A4C2462B3DB711867D0948 /* PBXTargetDependency */ = {
+		00D07B4D1CDC0CAC102E9526FC461498 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SSZipArchive;
 			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
-			targetProxy = 0B7AB027CCCB18C24DC9A5EC8F3DAD80 /* PBXContainerItemProxy */;
+			targetProxy = 8027E0E4757A6BFC90E5903784867207 /* PBXContainerItemProxy */;
 		};
-		65F383A64DE9C79A93D82179884796DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SSZipArchive;
-			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
-			targetProxy = A1A49E59879BDBA52624563BD01494C5 /* PBXContainerItemProxy */;
-		};
-		9674236C0991A653CCB305E8E58E5FB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GeoReversor-GeoReversor";
-			target = 84E4EEAF534C593E898D26137059B67E /* GeoReversor-GeoReversor */;
-			targetProxy = 0863BF019FA3B872BC8DEEED03185D92 /* PBXContainerItemProxy */;
-		};
-		D0D152EBFD2E7CE97CE9406726849C93 /* PBXTargetDependency */ = {
+		0BA6F3B4CD3C1C491F685F462E2AB5BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GeoReversor;
 			target = 7C51BE9E33B118B0C2738E58549341C3 /* GeoReversor */;
-			targetProxy = 50F7CB94CEE8F89473CF8CB4AD90E4B9 /* PBXContainerItemProxy */;
+			targetProxy = A8A3BBA4EDBEF1FB21FD6D373E7AA531 /* PBXContainerItemProxy */;
+		};
+		4FDC23184145157B352E8624CDE01B1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = F60E38364AFF5E1349FF07415B944396 /* SSZipArchive */;
+			targetProxy = E2371074B4FEB28B4836CBA5BBDFAC95 /* PBXContainerItemProxy */;
+		};
+		D944307F21A877E14548EF1947EE341A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GeoReversor-GeoReversor";
+			target = 84E4EEAF534C593E898D26137059B67E /* GeoReversor-GeoReversor */;
+			targetProxy = F68623621E129B4364E97A8FD81B9A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0637E504319EC5BA7778AD2556975BE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00905473E70C27678B50327452A6994F /* GeoReversor.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GeoReversor";
-				IBSC_MODULE = GeoReversor;
-				INFOPLIST_FILE = "Target Support Files/GeoReversor/ResourceBundle-GeoReversor-GeoReversor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = GeoReversor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		1035689FB39180FE6654524E4694EC15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80130F3C2EF2907ACE8F2AFE37036B45 /* GeoReversor.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GeoReversor";
-				IBSC_MODULE = GeoReversor;
-				INFOPLIST_FILE = "Target Support Files/GeoReversor/ResourceBundle-GeoReversor-GeoReversor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = GeoReversor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		12D51FB18E31BF454CE9E07B85503B78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80130F3C2EF2907ACE8F2AFE37036B45 /* GeoReversor.release.xcconfig */;
+			baseConfigurationReference = 4F837169843B9961B67D1C1FFB2919D0 /* GeoReversor.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -721,27 +693,19 @@
 			};
 			name = Release;
 		};
-		2136747C01B9B117E48B45DE408900BA /* Debug */ = {
+		1C20DB609C7E689675F78B1708CE8C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3B27A72CBE2C688B0471E28255E900C /* SSZipArchive.debug.xcconfig */;
+			baseConfigurationReference = 485ED5AA83D339F398F513A18571D171 /* GeoReversor.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SSZipArchive;
-				PRODUCT_NAME = SSZipArchive;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GeoReversor";
+				IBSC_MODULE = GeoReversor;
+				INFOPLIST_FILE = "Target Support Files/GeoReversor/ResourceBundle-GeoReversor-GeoReversor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = GeoReversor;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -763,6 +727,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FFE696B3D624F5DB5B0D8B7B0F95D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98D0085EF3B9B9109CBC5C64C58BBDF /* SSZipArchive.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -852,34 +841,9 @@
 			};
 			name = Release;
 		};
-		8279BC1D3A1B932672077E13C00A4690 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F98D0085EF3B9B9109CBC5C64C58BBDF /* SSZipArchive.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SSZipArchive;
-				PRODUCT_NAME = SSZipArchive;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		A9927020D0382AFBE8EE7CB3C46BCB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00905473E70C27678B50327452A6994F /* GeoReversor.debug.xcconfig */;
+			baseConfigurationReference = 485ED5AA83D339F398F513A18571D171 /* GeoReversor.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -968,6 +932,46 @@
 			};
 			name = Debug;
 		};
+		D4E3FEEA9C5E4DBC848012AAF6D5FE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F837169843B9961B67D1C1FFB2919D0 /* GeoReversor.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GeoReversor";
+				IBSC_MODULE = GeoReversor;
+				INFOPLIST_FILE = "Target Support Files/GeoReversor/ResourceBundle-GeoReversor-GeoReversor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = GeoReversor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E7B2D7E02E74072BADE52C759ED57C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B27A72CBE2C688B0471E28255E900C /* SSZipArchive.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SSZipArchive/SSZipArchive.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -980,20 +984,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E68617CDF6C4E9FF2975144E84E3411 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+		6187D8304CC76B3254930EE03A15F2E5 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2136747C01B9B117E48B45DE408900BA /* Debug */,
-				8279BC1D3A1B932672077E13C00A4690 /* Release */,
+				E7B2D7E02E74072BADE52C759ED57C79 /* Debug */,
+				6FFE696B3D624F5DB5B0D8B7B0F95D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C8F5EF34D8D91020401B88464F6A445 /* Build configuration list for PBXNativeTarget "GeoReversor-GeoReversor" */ = {
+		63C605659D26BD36A04040456F2595F8 /* Build configuration list for PBXNativeTarget "GeoReversor-GeoReversor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0637E504319EC5BA7778AD2556975BE2 /* Debug */,
-				1035689FB39180FE6654524E4694EC15 /* Release */,
+				1C20DB609C7E689675F78B1708CE8C94 /* Debug */,
+				D4E3FEEA9C5E4DBC848012AAF6D5FE0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,6 +14,7 @@ public struct GeoLocation {
     public let alternatenames: [String]
     public let latitude: Double
     public let longitude: Double
+    public let featureCode: String
     public let contryCode: String
     public let contry: String?
 }
