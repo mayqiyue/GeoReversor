@@ -14,7 +14,7 @@ public class GeoReversor: NSObject {
         case second // 市
         case third // 区
         case fourth // 乡镇
-        
+
         var codes: [String]? {
             switch self {
             case .second:
@@ -26,25 +26,25 @@ public class GeoReversor: NSObject {
             }
         }
     }
-    
+
     public let divisionLevel: DivisionLevel
-    
+
     public init(divisionLevel: DivisionLevel = .third) {
         self.divisionLevel = divisionLevel
     }
-    
+
     private var _tree: KDTree<GeoLocation>?
-    
+
     /// Prepare database
     public func loadData() {
         let locationsMap = extractGeoData()
         _tree = KDTree(values: Array(locationsMap.values))
     }
-    
+
     public func dropData() {
         _tree = nil
     }
-    
+
     /// Search for closest k known locations to these coordinates
     /// point: (latitude, longitude)
     public func search(_ point: (Double, Double), k: Int = 1) -> [GeoLocation] {
@@ -58,19 +58,19 @@ public class GeoReversor: NSObject {
         let targets = tree.nearestK(k, to: .init(id: "", name: "", alternatenames: [""], latitude: longitude, longitude: latitude, featureCode: "", contryCode: "", contry: ""))
         return targets
     }
-    
+
     private func extractGeoData() -> [String: GeoLocation] {
         var cities: [String: GeoLocation] = [:]
-        
+
         guard let cityFileURL = unzipFile(name: "cities1000", ext: "txt") else {
             return cities
         }
         guard let geoString = try? String(contentsOf: cityFileURL, encoding: .utf8) else {
             return cities
         }
-        
+
         let countryMap = extractCountryData()
-        
+
         for row in geoString.components(separatedBy: "\n").dropLast(1) { // drop last empty line
             autoreleasepool {
                 let columns = row.components(separatedBy: "\t")
@@ -81,10 +81,10 @@ public class GeoReversor: NSObject {
                 }
             }
         }
-        
+
         return cities
     }
-    
+
     private func extractCountryData() -> [String: String] {
         guard let countryFileURL = contentBundle.url(forResource: "countries", withExtension: "txt") else {
             return [:]
@@ -92,9 +92,9 @@ public class GeoReversor: NSObject {
         guard let string = try? String(contentsOf: countryFileURL, encoding: .utf8) else {
             return [:]
         }
-        
+
         var map: [String: String] = [:]
-        
+
         for row in string.components(separatedBy: "\n") {
             if row.isEmpty { continue }
             let columns = row.components(separatedBy: ",")
@@ -102,7 +102,7 @@ public class GeoReversor: NSObject {
         }
         return map
     }
-    
+
     private func unzipFile(name: String, ext: String) -> URL? {
         guard let filePath = contentBundle.url(forResource: name, withExtension: "zip")?.path else {
             return nil
@@ -116,13 +116,13 @@ public class GeoReversor: NSObject {
         }
         return destURL.appendingPathComponent("\(name).\(ext)")
     }
-    
+
     private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
-    
+
     private lazy var contentBundle: Bundle = {
         let mainBundle = Bundle(for: Self.self)
         if let resourceBundle = Bundle(url: mainBundle.bundleURL.appendingPathComponent("GeoReversor.bundle")) {
